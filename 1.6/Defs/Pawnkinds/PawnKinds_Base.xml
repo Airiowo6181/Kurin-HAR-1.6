@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--============================================Kurin 기본============================================-->
+  <!--============================================Kurin Base============================================-->
+  <!--============================================Kurin 基础============================================-->
+ <PawnKindDef Name="Kurin_PawnBase" Abstract="True">
+    <race>Kurin_Race</race>
+    <!--Not setting `fixedGender` may result in unexpected generation-->
+    <fixedGender>Female</fixedGender>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <invNutrition>3</invNutrition>
+    <gearHealthRange>0.8~1.0</gearHealthRange>
+    <apparelRequired>
+        <li>Kurin_Underwear</li>
+    </apparelRequired>
+    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+    <initialWillRange>3~7</initialWillRange>
+    <initialResistanceRange>10~20</initialResistanceRange>
+    <maxGenerationAge>30</maxGenerationAge>
+    <minGenerationAge>19</minGenerationAge>
+    <xenotypeSet>
+        <xenotypeChances>
+            <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+            <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+            <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+            <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+            <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+            <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+            <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+            <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+            <Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+            <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+            <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+        </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <!--허용되지 않는 특성-->
+    <!--不允许的特征-->
+    <disallowedTraits>
+        <!-- 裸体主义者 -->
+        <li>Nudist</li> 
+        <!-- 身体纯净主义者-->
+        <li>BodyPurist</li> 
+    </disallowedTraits>
+  </PawnKindDef>
+
+ <PawnKindDef Name="Kurin_RepublicBase" ParentName="Kurin_PawnBase" Abstract="True">
+    <defaultFactionType>Kurin_Faction</defaultFactionType>
+    <disallowedTraits>
+        <!-- 贪婪 -->
+        <li>Greedy</li> 
+        <!-- 嫉妒 -->
+        <li>Jealous</li> 
+    </disallowedTraits>
+  </PawnKindDef>
+
+ <PawnKindDef Name="Kurin_HostileBase" ParentName="Kurin_PawnBase" Abstract="True">
+    <defaultFactionType>Kurin_Faction_Hostile</defaultFactionType>
+    <initialWillRange>4~8</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+    <maxGenerationAge>36</maxGenerationAge>
+    <minGenerationAge>16</minGenerationAge>
+  </PawnKindDef>
+
+</Defs>
