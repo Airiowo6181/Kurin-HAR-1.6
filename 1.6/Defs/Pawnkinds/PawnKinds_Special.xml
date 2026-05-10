@@ -6,6 +6,7 @@
     <label>slave</label>
     <combatPower>30</combatPower>
     <race>Kurin_Race</race>
+    <fixedGender>Female</fixedGender>
     <backstoryFiltersOverride>
       <li>
         <categories>

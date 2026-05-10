@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!--==============================================NPC기본==============================================-->
+  <!--==============================================NPC Base==============================================-->
+  <!--==============================================NPC 基础==============================================-->
   <PawnKindDef Name="Kurin_RepublicBase" Abstract="True">
     <race>Kurin_Race</race>
+    <fixedGender>Female</fixedGender> <!--Not setting `fixedGender` may result in unexpected generation-->
     <defaultFactionType>Kurin_Faction</defaultFactionType>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <invNutrition>3</invNutrition>
@@ -10,11 +13,17 @@
       <li>Kurin_Underwear</li>
     </apparelRequired>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <initialWillRange>3~5</initialWillRange>
-    <initialResistanceRange>6~10</initialResistanceRange>
+    <initialWillRange>3~8</initialWillRange>
+    <initialResistanceRange>10~15</initialResistanceRange>
   </PawnKindDef>
   <!--==============================================NPC세부==============================================-->
+  <!--==============================================NPC Details==============================================-->
+  <!--==============================================NPC 细分==============================================-->
+
+
   <!--시민-->
+  <!--Citizen-->
+  <!--魅狐公民-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Citizen</defName>
     <label>Kurin Citizen</label>
@@ -33,7 +42,10 @@
       <li>Kurin_Citizen</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--자경단-->
+  <!--Vigilante-->
+  <!--魅狐义警-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Vigilante</defName>
     <label>Kurin Vigilante</label>
@@ -59,7 +71,10 @@
       <li>Kurin_Citizen</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--상인-->
+  <!--Trader-->
+  <!--魅狐商人-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Trader</defName>
     <label>Kurin Trader</label>
@@ -79,7 +94,10 @@
       <li>Kurin_Trader</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--엘리트-->
+  <!--Elite-->
+  <!--魅狐精英-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Elite</defName>
     <label>Kurin Elite</label>
@@ -108,7 +126,10 @@
       <li>Kurin_Elite</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--군인(분대원)-->
+  <!--Soldier (Squad Member)-->
+  <!--魅狐陆军士兵-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Soldier</defName>
     <label>Kurin Army Soldier</label>
@@ -142,7 +163,10 @@
       <li>Kurin_Soldier</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--군인(분대장)-->
+  <!--Soldier (Squad Leader)-->
+  <!--魅狐陆军中士-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_EliteSoldier</defName>
     <label>Kurin Army Sergeant</label>
@@ -177,6 +201,8 @@
     </backstoryCategories>
   </PawnKindDef>
   <!--군인(저격수)-->
+  <!--Soldier (Sniper)-->
+  <!--魅狐陆军狙击手-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Sniper</defName>
     <label>Kurin Army Sniper</label>
@@ -210,7 +236,7 @@
   </PawnKindDef>
 
   <!--=============Special===============-->
-
+  <!--魅狐指挥官-->
   <PawnKindDef ParentName="Kurin_RepublicBase">
     <defName>Kurin_Commader_melee</defName>
     <label>Kurin Commander</label>
@@ -239,6 +265,7 @@
     </backstoryCategories>
   </PawnKindDef>
 
+  <!--魅狐指挥官(近战)-->
   <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Commander_ranged</defName>
     <label>Kurin Commander</label>

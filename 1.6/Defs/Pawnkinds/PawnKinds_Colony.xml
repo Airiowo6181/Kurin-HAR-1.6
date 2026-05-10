@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--==============================================플레이어펙션==============================================-->
 <Defs>
+  <!--魅狐殖民者-->
   <PawnKindDef>
     <race>Kurin_Race</race>
+    <fixedGender>Female</fixedGender>
     <combatPower>40</combatPower>
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
@@ -29,8 +31,10 @@
     <initialResistanceRange>13~21</initialResistanceRange>
   </PawnKindDef>
 
+  <!--魅狐伴侣-->
   <PawnKindDef>
     <race>Kurin_Race</race>
+    <fixedGender>Female</fixedGender>
     <combatPower>40</combatPower>
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
