@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- <PawnKindDef Name="Kurin_HostileBase" Abstract="True">
-    <race>Kurin_Race</race>
-    <defaultFactionType>Kurin_Faction_Hostile</defaultFactionType>
-    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <invNutrition>2.4</invNutrition>
-    <apparelRequired>
-      <li>Kurin_Underwear</li>
-    </apparelRequired>
-	<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	<initialWillRange>3~5</initialWillRange>
-	<initialResistanceRange>6~10</initialResistanceRange>
-	<gearHealthRange>0.3~0.6</gearHealthRange>
-  </PawnKindDef>
-  
+
+   <!--魅狐侦察兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Scout</defName>
     <label>kurin scout</label>
@@ -40,7 +28,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-  
+
+   <!--魅狐野人-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Savage</defName>
     <label>kurin savage</label>
@@ -68,7 +57,8 @@
     </backstoryCategories>
     <gearHealthRange>0.1~1</gearHealthRange>
   </PawnKindDef>
-  
+
+   <!--魅狐新人-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Initiate</defName>
     <label>Kurin Initiate</label>
@@ -96,7 +86,7 @@
   </PawnKindDef>
   
 <!--====== Tier 2 =====-->
-
+   <!--魅狐新兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Recruit</defName>
     <label>Kurin Recruit</label>
@@ -124,7 +114,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-  
+
+   <!--魅狐精锐侦察兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_ELite_Scout</defName>
     <label>Kurin Elite Scout</label>
@@ -152,7 +143,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-   
+
+   <!--魅狐空降兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Trooper</defName>
     <label>Kurin Trooper</label>
@@ -183,7 +175,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-  
+
+   <!--魅狐忍者-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Ninja</defName>
     <label>Kurin Ninja</label>
@@ -215,6 +208,7 @@
     </apparelRequired>
   </PawnKindDef>
 
+    <!--魅狐刀斧手-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Slasher</defName>
     <label>Kurin Slasher</label>
@@ -245,7 +239,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-  
+
+   <!--魅狐狙击手-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Sniper_H</defName>
     <label>Kurin Sniper</label>
@@ -273,8 +268,10 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--============Tier 3============-->
-  
+
+   <!--魅狐精锐空降兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_EliteTrooper</defName>
     <label>Kurin Soldier</label>
@@ -304,7 +301,8 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-  
+
+    <!--魅狐精锐刀斧手-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_EliteSlasher</defName>
     <label>Kurin Soldier</label>
@@ -334,7 +332,9 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
-    
+
+
+    <!--Kurin_EliteSniper_H-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_EliteSniper_H</defName>
     <label>Kurin Sniper</label>
@@ -364,6 +364,7 @@
     </backstoryCategories>
   </PawnKindDef>
   
+   <!--魅狐老兵-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Veteran</defName>
     <label>kurin veteran</label>
@@ -392,8 +393,10 @@
       <li>Kurin_Army</li>
     </backstoryCategories>
   </PawnKindDef>
+
   <!--=============Special===============-->
-  
+
+  <!--魅狐军阀-->
   <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Warlord1</defName>
     <label>kurin warlord</label>
@@ -421,6 +424,7 @@
     </backstoryCategories>
   </PawnKindDef>
   
+    <!--魅狐战争领主-->
    <PawnKindDef ParentName="Kurin_HostileBase">
     <defName>Kurin_Warlord2</defName>
     <label>Kurin Warlord</label>
