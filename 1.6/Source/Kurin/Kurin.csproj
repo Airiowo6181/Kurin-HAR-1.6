@@ -33,13 +33,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\SEC_Assemblies\SEC_Assemblies\bin\Release\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="AlienRace">
-      <HintPath>..\..\..\..\SEC_Assemblies\SEC_Assemblies\bin\Release\AlienRace.dll</HintPath>
+      <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\SEC_Assemblies\SEC_Assemblies\bin\Release\Assembly-CSharp.dll</HintPath>
+      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,15 +49,13 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\SEC_Assemblies\SEC_Assemblies\bin\Release\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>F:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HarmonyInit.cs" />
-    <Compile Include="Kurin_Patches.cs" />
     <Compile Include="PawnRenderSubWorker_NoDraw.cs" />
-    <Compile Include="GenStep_BattleFoxes.cs" />
-    <Compile Include="GenStep_Republic.cs" />
     <Compile Include="ShotGun\Verb_Shoot_ShotGun.cs" />
     <Compile Include="ShotGun\Verb_Properties_ShotGun.cs" />
     <Compile Include="CompKurinPostSpawn.cs" />
