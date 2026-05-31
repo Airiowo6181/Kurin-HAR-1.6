@@ -614,10 +614,6 @@
                   </li>
                   <li>
                     <weight>10</weight>
-                    <only>RGBA(195,240,26,255)</only>
-                  </li>
-                  <li>
-                    <weight>10</weight>
                     <only>RGBA(181,210,158,255)</only>
                   </li>
                   <li>
@@ -694,7 +690,7 @@
                   <!--<li>
 								<weight>100</weight>  Name=() 
 								<only>RGBA(,,,1)</only>  RGB=(,,) # 
-							</li> -->
+							    </li> -->
                   <!--Common-->
                   <!--Blondes-->
                   <li>
@@ -1083,6 +1079,10 @@
           <li>DRNTF_NooseTrap</li>
         </buildingList>
         <blackEndoCategories>
+          <!-- Prevent vanilla Melanin endogenes from overriding HAR skin colorChannels for randomly generated Kurin pawns and newborns. -->
+          <!-- 防止原版 Melanin 内源基因覆盖随机生成的 Kurin 与新生儿的 HAR skin 颜色通道。 -->
+          <li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+
           <li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
           <li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
